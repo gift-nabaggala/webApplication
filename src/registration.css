@@ -26,7 +26,7 @@
 body {
   color: var(--first-color-dark);
 }
-.b-gradient {
+.bg-gradient {
   background-color: var(--gradient) !important;
 }
 
