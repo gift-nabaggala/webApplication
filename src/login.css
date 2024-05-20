@@ -27,10 +27,6 @@ body {
   color: var(--first-color-dark);
 }
 
-.bg-gradient {
-  background-color: var(--gradient) !important;
-}
-
 .logo {
   top: 0;
   right: 0;
@@ -54,6 +50,16 @@ body {
 .navbar a:hover,
 .navbar a.active {
   color: #00abf0;
+}
+
+.bg-gradient {
+  background: var(--gradient) !important;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  margin: 90px;
 }
 
 @media (max-width: 991px) {

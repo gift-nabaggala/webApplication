@@ -26,8 +26,9 @@
 body {
   color: var(--first-color-dark);
 }
+
 .bg-gradient {
-  background-color: var(--gradient) !important;
+  background: var(--gradient) !important;
 }
 
 .main {
