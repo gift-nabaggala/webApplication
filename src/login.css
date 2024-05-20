@@ -20,7 +20,7 @@
     #7ed6f8,
     #fffdd0
   );
-  --gradient: linear-gradient(rgba(0, 0, 0, 0.5) #ff7f50);
+  --gradient: linear-gradient(rgba(0, 0, 0, 0.5), #ff7f50);
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-  top: 0;
+  top: 25px;
   right: 0;
   width: 25%;
   height: 20%;
