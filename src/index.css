@@ -24,7 +24,9 @@
 }
 
 body {
+  max-width: 100%;
   color: var(--first-color-dark);
+  overflow-x: hidden;
 }
 
 .bg-gradient {
@@ -59,11 +61,11 @@ body {
 .main {
   width: 80%;
   height: auto;
-  margin: 95px 20px;
+  margin: 160px 20px;
 }
 
 .home-content {
-  margin: 150px;
+  margin: 160px;
 }
 .home-content .head {
   position: relative;
@@ -353,46 +355,6 @@ span {
   background: var(--first-color-light);
 }
 
-.leaders,
-.testimony {
-  margin: 2rem;
-  background: var(--background-image);
-}
-
-.leaders-container,
-.testimonials {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: initial;
-  gap: 3rem;
-  margin: 10px 100px;
-  width: 800px;
-  height: 100vh;
-}
-
-.leaders-container .leaders-box,
-.testimonials .testimony-box {
-  flex: 1 1 1rem; /* 1 1 1rem */
-  background: #00abf0;
-  padding: 0rem 0rem 0rem; /* 1rem 1rem 1rem */
-  border-radius: 1rem;
-  text-align: center;
-  border: 0.1rem solid #081b29;
-  transition: 0.5s ease;
-}
-
-.leaders-container .leaders-box:hover,
-.testimonials .testimony-box:hover {
-  border-color: #081b29;
-  transform: scale(1.02);
-}
-
-.leaders-box:hover,
-.testimony-box:hover {
-  color: #081b29;
-}
-
 .img1 {
   width: 100%;
   height: 50%;
@@ -473,114 +435,17 @@ span {
   }
 }
 
-.leaders-box i,
-.testimony-box i {
-  font-size: 7rem;
-  color: #081b29;
-}
-
-.leaders-box h3,
-.testimony-box h3 {
-  font-size: 2.6rem;
-}
-
-.leaders-box p,
-.testimony-box p {
-  position: relative;
-  font-size: 16px;
-  margin: 5px 0 40px;
-}
-
-.leaders-box p::before,
-.testimony-box p::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 98%;
-  height: 98%;
-  background: #00abf0;
-  animation: showRight 1s ease forwards;
-  animation-delay: 1.6s;
-}
-/* KEYFRAMES ANIMATION */
-@keyframes showRight {
-  100% {
-    width: 0;
-  }
-}
-
-@keyframes manipActiveHover {
-  100% {
-    pointer-events: auto;
-  }
-}
 .service-img {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
 }
+
 .services {
   width: 100%;
   height: 950px;
-  margin: 5rem;
+  margin-bottom: 25px;
+
   background: var(--first-color-lighten);
-}
-
-.services h2 {
-  margin-top: 2rem;
-}
-
-.services-container .services-box {
-  position: relative;
-  height: 90%;
-  width: 77%;
-  margin: 50px;
-  border-radius: 2px;
-  box-shadow: 2 2 2rem #081b29;
-  overflow: hidden;
-}
-.services-box img {
-  width: 80%;
-  margin: 30px 30px 30px 30px;
-  transition: 0.5s ease;
-}
-
-.services-box:hover img {
-  transform: scale(1.1);
-}
-
-.services-box .services-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  height: auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #00abf0);
-  text-align: center;
-  padding: 0 0rem;
-  transform: translateY(100%);
-  transition: 0.5s ease;
-}
-
-.services-box:hover .services-layer {
-  transform: translateY(0);
-}
-
-.services-layer h4 {
-  font-size: 3rem;
-}
-
-.services-layer p {
-  font-size: 1.3rem;
-  margin: 0.1rem 0 1rem;
-}
-
-.services-layer a {
-  width: 5rem;
-  height: 3rem;
-  background: #081b29;
-  border-radius: 20%;
 }
 
 .contact {
@@ -703,36 +568,11 @@ input .btn2::before {
   cursor: pointer;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2rem 9%;
-  background: var(--second-bg-color);
-}
-
-.footer-text p {
-  font-size: 1.6rem;
-}
-
-.footer-iconTop a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.8rem;
-  background: #081b29;
-  border-radius: 0.8rem;
-  transition: 0.5s ease;
-}
-
-.footer-iconTop a:hover {
-  box-shadow: 0 0 1rem gray;
-}
-
-.footer-iconTop a i {
-  font-size: 2.4rem;
-  color: #00abf0;
+.logo-footer {
+  top: 40px;
+  right: 0;
+  width: 70%;
+  height: 20%;
 }
 
 @media (max-width: 991px) {
@@ -740,6 +580,10 @@ input .btn2::before {
     height: auto;
   }
   .logo {
+    width: 50%;
+    height: auto;
+  }
+  .logo-footer {
     width: 50%;
     height: auto;
   }
@@ -767,6 +611,11 @@ input .btn2::before {
     margin: 40px;
   }
 
+  .services {
+    width: 100%;
+    height: auto;
+  }
+
   .home-content h1 {
     font-size: 2rem;
   }
@@ -780,41 +629,10 @@ input .btn2::before {
     margin-top: 2rem;
   }
 
-  .services-container {
-    margin: 20px;
-  }
-
-  .services-box {
-    margin: 10px;
-  }
-
-  .services-layer h4 {
-    font-size: 2rem;
-  }
-
-  .services-layer p {
-    font-size: 1.2rem;
-  }
-
-  .testimonials {
-    margin: 20px;
-  }
-
-  .testimony-box {
-    margin: 10px;
-  }
-
-  .testimony-box h3 {
-    font-size: 1.6rem;
-  }
-
-  .testimony-box p {
-    font-size: 1.2rem;
-  }
-
   .contact {
     width: 100%;
-    margin-left: 0;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .contact form .input-box input,
