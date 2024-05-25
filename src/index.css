@@ -204,6 +204,10 @@ body {
   }
 }
 
+.img-testimony {
+  width: 231px;
+}
+
 .about {
   display: flex;
   justify-content: center;
@@ -514,7 +518,7 @@ span {
 
 .services {
   width: 100%;
-  height: auto;
+  height: 950px;
   margin: 5rem;
   background: var(--first-color-lighten);
 }
